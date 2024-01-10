@@ -395,17 +395,17 @@ df_post_jb = df_total_sorted[85:]
 sns.relplot(data = df_pre_jb,
            x = 'year',
            y = 'inflation_adjusted_in_billions',)
-sns.regplot(data = df_pre_jb,
-            x = 'year',
-            y = 'inflation_adjusted_in_billions',
-            scatter = False,
-            line_kws = {"color": "red", "alpha": 0.7, "lw": 2})
+#sns.regplot(data = df_pre_jb,
+#            x = 'year',
+#            y = 'inflation_adjusted_in_billions',
+#            scatter = False,
+#            line_kws = {"color": "red", "alpha": 0.7, "lw": 2})
 plt.xticks(rotation = 45)
 plt.xlabel('Year', fontsize = 10)
 plt.ylabel('Transaction Value - Inflation Adjusted (in billions)', fontsize = 10)
 plt.gca().xaxis.set_major_locator(ticker.MaxNLocator(nbins = 18))
 plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(nbins = 20))
-plt.ylim(-1, None)
+plt.ylim(-10, 330)
 
 plt.show()
 
@@ -415,17 +415,17 @@ plt.show()
 sns.relplot(data = df_post_jb,
            x = 'year',
            y = 'inflation_adjusted_in_billions')
-sns.regplot(data = df_post_jb,
-            x = 'year',
-            y = 'inflation_adjusted_in_billions',
-            scatter = False,
-            line_kws = {"color": "red", "alpha": 0.7, "lw": 2})
+#sns.regplot(data = df_post_jb,
+#            x = 'year',
+#            y = 'inflation_adjusted_in_billions',
+#            scatter = False,
+#            line_kws = {"color": "red", "alpha": 0.7, "lw": 2})
 plt.xticks(rotation = 45)
 plt.xlabel('Year', fontsize = 10)
 plt.ylabel('Transaction Value - Inflation Adjusted (in billions)', fontsize = 10)
 plt.gca().xaxis.set_major_locator(ticker.MaxNLocator(nbins = 18))
 plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(nbins = 20))
-plt.ylim(-10, None)
+plt.ylim(-10, 330)
 
 plt.show()
 
